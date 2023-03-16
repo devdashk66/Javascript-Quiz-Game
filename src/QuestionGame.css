@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 2px 2px rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 2px 2px rgba(49, 151, 149, 0.4);
+    border-color: rgba(49, 151, 149, 1);
+  }
+  100% {
+    box-shadow: 0 0 2px 2px rgba(239, 68, 68, 0.4);
+  }
+}
+
+.button-red-glow {
+  animation: glow 3.5s infinite;
+  border-color: rgba(239, 68, 68, 1);
+}
+
+@keyframes glow2 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(49, 151, 149, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(49, 151, 149, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(49, 151, 149, 0.4);
+  }
+}
+
+.button-teal-glow {
+  animation: glow2 2s infinite;
+  border-color: rgba(49, 151, 149, 1);
+}
+
+.highlight {
+  background: rgba(49, 151, 149, 1);
+}
+
+button {
+  transition: 0.3s;
+}
